@@ -1,6 +1,9 @@
 package ratelimit
 
-import "sync"
+import (
+	"sync"
+	"time"
+)
 
 type store struct {
 	shards []shard
